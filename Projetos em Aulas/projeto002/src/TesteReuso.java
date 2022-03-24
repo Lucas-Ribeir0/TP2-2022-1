@@ -1,6 +1,5 @@
 import entidades.PessoaFisica;
 import util.Reuso; // Importa a classe de outra pasta, definida pelo "package" no inicío do arquivo.
-
 public class TesteReuso {
     public static void main(String[] args) {
         Reuso.print("Olá Mundo");

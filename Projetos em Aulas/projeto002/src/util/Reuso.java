@@ -6,7 +6,7 @@ public class Reuso {
         void - significa que este metódo não tem retorno
         print - nome que definimos para o metodo
         String msg - que o metodo espera uma String como parametro */
-    public static void print(Object msg) { // Declarar a variável como Object, da a liberdade para o paramêtro ser de multiplos tipos.
+    public static void print(Object msg) { // Declarar a variável como Object, da a liberdade para o paramêtro ser de diferentes tipos.
         System.out.println(msg);
     }
 }
