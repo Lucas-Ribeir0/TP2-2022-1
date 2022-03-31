@@ -1,3 +1,5 @@
+package projeto002.src;
+
 public class EscopoVariaveis {
     public static void main(String[] args) {
         int i = 5;

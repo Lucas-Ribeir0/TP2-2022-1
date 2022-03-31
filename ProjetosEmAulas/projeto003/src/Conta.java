@@ -1,3 +1,5 @@
+package projeto003.src;
+
 /*
 * Conta
 */
@@ -6,7 +8,7 @@ public class Conta {
     // Atributos
     String nConta;
     String agencia;
-    String nomeCliente;
+    Titular titular;
     double saldo;
     double limite;
 
@@ -43,5 +45,15 @@ public class Conta {
             return true;
         }
         return false;
+    }
+
+    public void extrato(){
+        System.out.println(" ------- Extrato -------- ");
+        System.out.println("Titular: " + titular.nome);
+        System.out.println("----------------------------");
+        System.out.println("Ag: " + agencia + "Conta: " + nConta);
+        System.out.println("Saldo: R$ " + saldo);
+        System.out.println("Limite: R$ " + limite);
+        System.out.println("Disponível: R$ " + (saldo + limite));
     }
 }

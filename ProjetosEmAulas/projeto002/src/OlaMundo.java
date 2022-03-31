@@ -1,3 +1,5 @@
+package projeto002.src;
+
 import javax.swing.JOptionPane;
 
 public class OlaMundo {

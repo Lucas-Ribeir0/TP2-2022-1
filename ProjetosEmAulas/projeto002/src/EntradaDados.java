@@ -1,3 +1,4 @@
+package projeto002.src;
 import java.util.Scanner;
 
 public class EntradaDados {

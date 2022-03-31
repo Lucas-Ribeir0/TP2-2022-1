@@ -1,3 +1,5 @@
+package projeto003.src;
+
 public class testeConta {
     public static void main(String[] args) {
         // Instanciar um objeto do tipo Conta
@@ -8,7 +10,7 @@ public class testeConta {
         contaCebolinha.saldo = 2050.07;
         contaCebolinha.nConta = "3333.33";
         contaCebolinha.limite = 500;
-        contaCebolinha.nomeCliente = "Cebolinha";
+        // contaCebolinha.nomeCliente = "Cebolinha";
 
         System.out.println("Objeto " + contaCebolinha);
         System.out.println("Saldo: " + contaCebolinha.saldo);
@@ -46,6 +48,7 @@ public class testeConta {
         }
         System.out.println("Após a Transferência");
         System.out.println("Conta Chico Bento: " + contaChicoBento.saldo);
-        System.out.println("Conta Cebolinha " + contaCebolinha.saldo);  
+        System.out.println("Conta Cebolinha " + contaCebolinha.saldo); 
+
     }
 }

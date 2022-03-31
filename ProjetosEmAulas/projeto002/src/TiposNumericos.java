@@ -1,3 +1,6 @@
+package projeto002.src;
+
+
 public class TiposNumericos {
     public static void main(String[] args) {
         // float - corresponde a valores numéricos reais
