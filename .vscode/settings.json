@@ -1,9 +1,5 @@
 {
     "java.project.sourcePaths": [
-        "Projetos em Aulas/projeto003/src",
-        "Projetos em Aulas/projeto003",
-        "Projetos em Aulas/projeto002/src",
-        "ExercicioJava",
-        "ProjetosEmAulas"
+        "ExercicioJava"
     ]
 }
