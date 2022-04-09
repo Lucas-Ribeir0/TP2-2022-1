@@ -1,6 +1,6 @@
 public class Exercicio7 {
     public static void main(String[] args) {
-        int x = 13;
+        int x = 123;
         int y = 0;
 
         do {

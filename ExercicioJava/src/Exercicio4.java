@@ -3,7 +3,10 @@ public class Exercicio4 {
         for(int i = 1, fatorial = 1; i <= 10; i++) {
             fatorial = fatorial * i;
 
-            System.out.println("Fatorial de: " + i + " é: " + fatorial); 
+            int fat = 0;
+            fat = i;
+
+            System.out.println("Fatorial de " + i + " é (" + (fat - 1) + "!) * " + fat + " = " + fatorial); 
         }
     }
 }
