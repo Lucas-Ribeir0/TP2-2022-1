@@ -1,11 +1,11 @@
-public class Cliente {
+public class ClienteA {
     private String nome;
     private String endereco;
     private String cpf;
     private int idade;
 
     public void mudaCPF(String cpf) {
-        if(validaCPF(cpf) == true) {
+        if(validaCPF(cpf)) {
             this.setCpf(cpf);
             System.out.println("CPF validado e alterado!");
         }
@@ -17,6 +17,7 @@ public class Cliente {
     private boolean validaCPF(String cpf) {
         cpf = cpf.replace(".", "");
         cpf = cpf.replace("-", "");
+
 
         if(cpf.length() == 11) {
             // Vamos verificar.
@@ -32,12 +33,10 @@ public class Cliente {
             for (int i = 0; i < cpf.length(); i++) {
                 vCPF[i] = Character.getNumericValue(cpf.charAt(i));
             }
-
             for (int i = 0; i < vCPF.length - 2; i++) {
                 int j = 10;
                 vCPF_aux = vCPF_aux + (vCPF[i] * (j - i));
             }
-            
             if(((vCPF_aux % 11) < 2 ) && vCPF_aux % 11 == Character.getNumericValue(dv1)) {
                 dv1_int = 0;
             } else if (((vCPF_aux % 11) > 2) && vCPF_aux % 11 == Character.getNumericValue(dv1)) {
@@ -49,14 +48,12 @@ public class Cliente {
 
                 vCPF_aux = vCPF_aux + (vCPF[i] * (j - i));
             }
-            
             if(((vCPF_aux % 11) < 2 ) && vCPF_aux % 11 == Character.getNumericValue(dv2)) {
                 dv2_int = 0;
             } else if (((vCPF_aux % 11) > 2) && vCPF_aux % 11 == Character.getNumericValue(dv2));  {
                 dv2_int = 11 - (vCPF_aux % 11);
             }
-
-            if((vCPF[9] == dv1_int) && vCPF[10] == dv2_int ) {
+            if((vCPF[9] == Character.getNumericValue(dv1)) && vCPF[10] == Character.getNumericValue(dv2)) {
                 return true;
             }
         }

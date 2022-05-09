@@ -1,7 +1,7 @@
 public class TesteCliente {
     public static void main(String[] args) {
-        Cliente Cli = new Cliente();
+        ClienteA Cli = new ClienteA();
 
-        Cli.mudaCPF("443.580.338-06");
+        Cli.mudaCPF("443.338-06");
     }
 }
