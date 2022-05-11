@@ -25,5 +25,20 @@ public class TesteC {
         adc.roda(cp);
 
         System.out.println("Saldo Total: " + adc.getSaldoTotal());
+
+        Banco bc = new Banco();
+
+        bc.adiciona(c);
+        bc.adiciona(cc);
+        bc.adiciona(cp);
+
+        System.out.println(bc.pegaConta(1).getClass().getSimpleName());
+        System.out.println(bc.pegaConta(3).getClass().getSimpleName());
+
+        System.out.println(bc.pegaTotalDeContas());
+
+        for(int i = 0; i < (bc.pegaTotalDeContas()); i++) {
+            adc.roda(bc.Contas[i]);
+        }
     }
 }
