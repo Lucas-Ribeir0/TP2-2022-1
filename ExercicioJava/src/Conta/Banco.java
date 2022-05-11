@@ -1,11 +1,13 @@
 package Conta;
 
+import java.util.ArrayList;
+
 public class Banco {
-    protected Conta Contas[] = new Conta[3];
+    protected ArrayList<Conta> Contas = new ArrayList<>(10);
     private int contador = 0;
 
     void adiciona(Conta c) {
-            Contas[contador] = c;
+            Contas.add(c);
             
             System.out.println("A " + c.getClass().getSimpleName() +  " foi adicionado na posição: " + (contador + 1));
 
@@ -13,9 +15,9 @@ public class Banco {
     };
 
     Conta pegaConta(int x) {
-        return Contas[x - 1];
+        return Contas.get(x - 1);
     };
     int pegaTotalDeContas() {
-        return Contas.length;
+        return (Contas.size());
     }
 }

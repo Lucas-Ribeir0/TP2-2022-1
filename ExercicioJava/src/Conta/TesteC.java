@@ -26,6 +26,8 @@ public class TesteC {
 
         System.out.println("Saldo Total: " + adc.getSaldoTotal());
 
+
+        System.out.println("\n - = - Início Metódo Banco - = - \n");
         Banco bc = new Banco();
 
         bc.adiciona(c);
@@ -38,7 +40,7 @@ public class TesteC {
         System.out.println(bc.pegaTotalDeContas());
 
         for(int i = 0; i < (bc.pegaTotalDeContas()); i++) {
-            adc.roda(bc.Contas[i]);
+            adc.roda(bc.Contas.get(i));
         }
     }
 }
