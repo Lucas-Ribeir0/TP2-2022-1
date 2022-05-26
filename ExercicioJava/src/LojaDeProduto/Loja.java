@@ -3,6 +3,15 @@ package LojaDeProduto;
 import java.util.ArrayList;
 
 public class Loja {
+
+    public static String buscaProduto(ArrayList<Produto> estoque, String produto) {
+        for (int i = 0; i < estoque.size(); i++) {
+            if(estoque.get(i).getNome() == produto) {
+                return "O produto foi encontrado na posição " + i;
+            }
+        }        
+        return "O produto não foi encontrado";
+    }
     public static void main(String[] args) {
         ArrayList<Produto> estoque = new ArrayList<>();
 
@@ -19,5 +28,7 @@ public class Loja {
         System.out.println();
 
         System.out.println(estoque.get(0).equals(estoque.get(2)));
-    }
+
+        System.out.println(buscaProduto(estoque, "Metallica"));
+        }
 }
