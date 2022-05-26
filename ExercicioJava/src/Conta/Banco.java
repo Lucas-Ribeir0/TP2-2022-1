@@ -3,7 +3,7 @@ package Conta;
 import java.util.ArrayList;
 
 public class Banco {
-    protected ArrayList<Conta> Contas = new ArrayList<>(10);
+    protected ArrayList<Conta> Contas = new ArrayList<>();
     private int contador = 0;
 
     void adiciona(Conta c) {
