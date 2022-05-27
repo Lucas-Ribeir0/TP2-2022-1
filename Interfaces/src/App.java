@@ -10,7 +10,7 @@ public class App {
         nomes.add("Cascao");
         System.out.println(nomes);
         Collections.sort(nomes);// ordena a lista
-        System.out.println(nomes)
+        System.out.println(nomes);
 
         LinkedList<Produto> produtos = new LinkedList<Produto>();
         produtos.add(new Produto("Mouse", 60.0));

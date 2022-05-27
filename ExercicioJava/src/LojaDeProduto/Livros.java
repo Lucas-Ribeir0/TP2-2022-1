@@ -3,7 +3,7 @@ package LojaDeProduto;
 public class Livros extends Produto{
     private String autor;
 
-    public Livros(String nome, double preco, String autor, int codBar) {
+    public Livros(String nome, double preco, String autor, Integer codBar) {
         super(nome, preco, codBar);
         setAutor(autor);
     }

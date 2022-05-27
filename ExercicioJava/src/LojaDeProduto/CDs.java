@@ -1,9 +1,9 @@
 package LojaDeProduto;
 
-public class CDs extends Produto {
+public class CDs extends Produto  {
     private int numFaixas;
 
-    public CDs(String nome, double preco, int numFaixas, int codBar) {
+    public CDs(String nome, double preco, int numFaixas, Integer codBar) {
         super(nome, preco, codBar);
         setNumFaixas(numFaixas);
     }
@@ -19,6 +19,5 @@ public class CDs extends Produto {
     @Override
     public String toString() {
         return super.toString() + "Número de faixas: " + numFaixas;
-    }
-    
+    }    
 }

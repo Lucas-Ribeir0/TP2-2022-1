@@ -3,7 +3,7 @@ package LojaDeProduto;
 public class DVDs extends Produto{
     private String duracao;
 
-    public DVDs(String nome, double preco, String duracao, int codBar) {
+    public DVDs(String nome, double preco, String duracao, Integer codBar) {
         super(nome, preco, codBar);
         setDuracao(duracao);
     }
