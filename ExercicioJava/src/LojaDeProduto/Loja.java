@@ -37,8 +37,6 @@ public class Loja {
         
         buscaProduto(estoque, 777);
         
-        
-        
         for (int i = 0; i < estoque.size(); i++) {
             System.out.println(estoque.get(i).toString());
         }        

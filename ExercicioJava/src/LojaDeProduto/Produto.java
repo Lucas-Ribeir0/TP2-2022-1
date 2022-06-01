@@ -14,7 +14,7 @@ public abstract class Produto implements Comparable<Produto> {
 
     @Override
     public String toString() {
-        return "O produto: " + getClass().getSimpleName() +  " | Cód. Barras: " + codBar + " | Nome: " + nome + " | Preço: " + preco + " | ";
+        return getClass().getSimpleName() +  " | Cód. Barras: " + codBar + " | Nome: " + nome + " | Preço: " + preco + " | ";
     }
 
     public String getNome() {
